@@ -1,0 +1,4 @@
+coupon01,product01_3_msg01_msg02_msg03,product02_1_msg01
+coupon04,product03_4_msg_msg_msg_msg,product04_3_msg_msg_msg
+coupon01,product01_7_ _ _ _ _ _ _ _,product04_7_ _ _ _ _ _ _ _
+coupon02,product02_8_ _ _ _ _ _ _ _ _,product04_5_ _ _ _ _ _
