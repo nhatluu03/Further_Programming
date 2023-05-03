@@ -1,0 +1,30 @@
+|--------------------------------------------------------------|
+|                       RECEIPT                                  |
+|                                                              |
+| Customer Name: An Nguyen                                      |
+| Date Of Purchase: 02/05/2023                                  |
+|                                                              |
+|                                                               |
+| Cart Number: 2                                                |
+| Product:            {DIGITAL - Movie=1, GIFTABLE DIGITAL - Album=1}                          |
+| Gift Message:       {GIFTABLE DIGITAL - Album=[Message3]}                          |
+| Total Weight:       0.0 kg                                    |
+| --------------------------------                              |
+| Coupon Applied:                                               |
+| Coupon ID: Coupon2
+Coupon Type: Percentage Coupon
+Coupon Value: 25%                                                            |
+| --------------------------------                              |
+| Shipping Fee:       $0.0                                     |
+| Subtotal:           $105.0                                     |
+| Tax:                $0.5                                     |
+| Total:              $105.5                                     |
+|                                                              |
+| Payment Method: Credit Card                                    |
+| Card Number: **** **** **** 1234                               |
+| Authorization Code: 123456                                     |
+|                                                              |
+|                                                              |
+| Thank you for shopping with us!                                |
+|                                                              |
+|--------------------------------------------------------------|

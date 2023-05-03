@@ -1,0 +1,10 @@
+Digital:Movie:2,GiftablePhysical:Album:2:Message1:Message2,Coupon1
+Digital:Movie:1,GiftablePhysical:Album:1:Message3,Coupon2
+Digital:Movie:1,Physical:Mug:2,Physical:Book:2,GiftablePhysical:Album:1:Message3,Coupon3
+Digital:Podcast:2,Coupon4
+Physical:T-shirt:3,No
+Digital:Movie:3,GiftableDigital:Online Course:1:Message4,Coupon5
+Physical:Book:5,GiftablePhysical:Journal:3:Message5:Message6:Message7,Coupon6
+Physical:Sneakers:2,GiftablePhysical:Perfume:1:Message8,Coupon7
+GiftableDigital:Online Fitness Program:2:Message8:Message9,Coupon9
+GiftablePhysical:Album:1:Message3,Coupon2

@@ -1,0 +1,27 @@
+|--------------------------------------------------------------|
+|                       RECEIPT                                  |
+|                                                              |
+| Customer Name: An Nguyen                                      |
+| Date: 04/30/2023                                               |
+|                                                              |
+|                                                               |
+| Cart Number: 3                                               |
+| Product:            {PHYSICAL - Book=5, GIFTABLE DIGITAL - Album=2}                          |
+| Gift Message:       {GIFTABLE DIGITAL - Album=[Chuc mung nam moi, Happy New Year]}                          |
+| Total Weight:       4.0 kg                                    |
+| --------------------------------                              |
+| Coupon Applied:                                               |
+| null                                                            |
+| --------------------------------                              |
+| Subtotal:           $325.4                                     |
+| Tax:                $25.0                                     |
+| Total:              $350.3                                     |
+|                                                              |
+| Payment Method: Credit Card                                    |
+| Card Number: **** **** **** 1234                               |
+| Authorization Code: 123456                                     |
+|                                                              |
+|                                                              |
+| Thank you for shopping with us!                                |
+|                                                              |
+|--------------------------------------------------------------|

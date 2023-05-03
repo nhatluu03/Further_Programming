@@ -1,0 +1,63 @@
+Product,Physical,T-shirt,A cotton T-shirt,20,19.99,0.2,Normal
+Product,Digital,Audiobook,A digital audiobook,15,14.99,Luxury
+Product,Physical,Mug,A ceramic mug,30,12.99,0.5,No
+Product,Digital,Movie,A digital movie,5,4.99,Normal
+Product,Physical,Book,A physical book,25,24.99,0.8,Luxury
+Product,Digital,Music Album,A digital music album,10,9.99,No
+Product,Physical,Vinyl Record,A vinyl record,15,14.99,0.3,Normal
+Product,GiftablePhysical,Shirt,A cotton shirt with a cool graphic print,25,300,1.5,Luxury
+Product,GiftableDigital,Album,A collection of popular songs in MP3 format,20,100,No
+Product,GiftablePhysical,Journal,A hardcover journal with a pen holder,15,200,1,Normal
+Product,GiftableDigital,Online Course,A comprehensive course on web development,100,500,Luxury
+Product,Physical,Running Shoes,A pair of running shoes,50,89.99,0.8,Luxury
+Product,Digital,Video Game,A digital video game,10,29.99,Normal
+Product,Physical,Backpack,A durable backpack for outdoor activities,20,39.99,1.2,Normal
+Product,Digital,Streaming Service,A digital streaming service subscription,30,9.99,No
+Product,Physical,Desk Lamp,A stylish desk lamp,15,24.99,0.5,Normal
+Product,Digital,Podcast,A digital podcast,5,1.99,No
+Product,Physical,Guitar,A six-string guitar,10,249.99,2,Luxury
+Product,Digital,Photo Editing Software,A digital photo editing software,20,49.99,Luxury
+Product,Physical,Sneakers,A pair of stylish sneakers,40,129.99,0.5,Normal
+Product,Digital,Language Learning App,A digital language learning app subscription,15,19.99,No
+Product,GiftablePhysical,Perfume,A bottle of luxury perfume,10,199.99,0.2,Luxury
+Product,GiftableDigital,Online Cooking Class,A digital cooking class,25,79.99,Luxury
+Product,GiftablePhysical,Scarf,A cozy wool scarf,30,49.99,0.5,Normal
+Product,GiftableDigital,Photography Course,A comprehensive digital photography course,50,149.99,Luxury
+Product,Physical,Weighted Blanket,A cozy and comfortable weighted blanket,15,79.99,1.5,Luxury
+Product,Digital,Mobile App,A mobile app,5,4.99,No
+Product,Physical,Electric Toothbrush,An electric toothbrush with multiple brush heads,20,59.99,0.8,Luxury
+Product,Digital,Graphic Design Software,A digital graphic design software,30,99.99,Luxury
+Product,Physical,Portable Bluetooth Speaker,A portable Bluetooth speaker,25,69.99,0.5,Normal
+Product,Digital,Stock Trading Platform,A digital stock trading platform subscription,50,29.99,No
+Product,GiftablePhysical,Board Game,A board game for the whole family,20,49.99,1,Normal
+Product,GiftableDigital,Online Fitness Program,A digital fitness program,15,39.99,No
+Product,GiftablePhysical,Teapot Set,A teapot set with cups,10,79.99,1.5,Luxury
+Product,GiftableDigital,Online Art Class,A digital art class,20,59.99,Normal
+Product,Physical,Smartwatch,A stylish and functional smartwatch,30,299.99,0.8,Luxury
+Product,Digital,Cloud Storage,A digital cloud storage subscription,10,4.99,No
+Product,Physical,Wireless Headphones,A pair of high-quality wireless headphones,40,149.99,0.5,Normal
+Product,Digital,Online Meditation Course,A digital meditation course,15,24.99,Normal
+Product,GiftablePhysical,Candle Set,A set of luxury candles,25,99.99,1.2,Luxury
+Product,GiftableDigital,Online Writing Course,A comprehensive online writing course,20,79.99,Normal
+Coupon,PriceCoupon,75
+Coupon,PercentageCoupon,25
+Coupon,PriceCoupon,50
+Coupon,PercentageCoupon,10
+Coupon,PriceCoupon,150
+Coupon,PercentageCoupon,20
+Coupon,PriceCoupon,200
+Coupon,PercentageCoupon,30
+Coupon,PriceCoupon,80
+Coupon,PercentageCoupon,15
+Coupon,PriceCoupon,120
+Coupon,PercentageCoupon,35
+Coupon,PriceCoupon,90
+Coupon,PercentageCoupon,5
+Coupon,PriceCoupon,250
+Coupon,PercentageCoupon,40
+Coupon,PriceCoupon,30
+Coupon,PercentageCoupon,20
+Coupon,PriceCoupon,175
+Coupon,PercentageCoupon,45
+Coupon,PriceCoupon,60
+Coupon,PercentageCoupon,12
