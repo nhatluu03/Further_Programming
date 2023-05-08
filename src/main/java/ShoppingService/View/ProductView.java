@@ -13,6 +13,6 @@ public class ProductView {
         String weight = product instanceof PhysicalProduct ? Double.toString(((PhysicalProduct) product).getWeight()) : "N/A";
         String giftable = product.isGiftable() ? "Yes" : "No";
         String description = product.getDescription();
-        System.out.printf("%-10s%-35s%-10.2f%-20s%-10d%-10s%-10s%-80s", type, name, price, taxType, quantity, weight, giftable, description);
+        System.out.printf("%-10s%-35s%-10.2f%-20s%-10d%-10s%-10s%-80s\n", type, name, price, taxType, quantity, weight, giftable, description);
     }
 }

@@ -24,4 +24,5 @@ public abstract class CartItem {
     public int compareTo(CartItem other) {
         return this.getProduct().getName().compareTo(other.getProduct().getName());
     }
+
 }

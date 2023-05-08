@@ -18,7 +18,7 @@ import static ShoppingService.Model.Product.products;
 public class ShopManager {
     public final static Scanner sc = new Scanner(System.in);
     public static Cart currentCart;
-    private static CartList cartList = new CartList();
+    private static CartList cartList = CartList.getInstance();
 
     public static void displayMenu() {
         System.out.println("\nWelcome to the Shopping App!");
@@ -206,7 +206,7 @@ public class ShopManager {
         String name = sc.nextLine();
 
         if (Product.checkIfNameExisted(name)) {
-            System.out.printf("%-10s%-35s%-10s%-20s%-10s%-10s%-10s%-80s", "Type", "Name", "Price ($)", "Tax type", "Quantity", "Weight (Kg)", "Giftable", "Description");
+            System.out.printf("%-10s%-35s%-10s%-20s%-10s%-10s%-10s%-80s\n", "Type", "Name", "Price ($)", "Tax type", "Quantity", "Weight (Kg)", "Giftable", "Description");
             Product product = Product.getProduct(name);
             ProductView.displayProduct(product);
         } else {
@@ -222,7 +222,7 @@ public class ShopManager {
             return;
         }
 
-        System.out.printf("%-10s%-35s%-10s%-20s%-10s%-10s%-10s%-80s", "Type", "Name", "Price ($)", "Tax type", "Quantity", "Weight (Kg)", "Giftable", "Description");
+        System.out.printf("%-10s%-35s%-10s%-20s%-10s%-10s%-10s%-80s\n", "Type", "Name", "Price ($)", "Tax type", "Quantity", "Weight (Kg)", "Giftable", "Description");
         for (Product product : products.values()) {
             ProductView.displayProduct(product);
         }
@@ -232,7 +232,11 @@ public class ShopManager {
     public static void updateProductMessageInCart() {
         System.out.println("\nUPDATING MESSAGES OF ITEMS IN CART");
         System.out.println("This is all items with message in your cart:");
-        System.out.println(currentCart.getItemsWithMessage());
+        // CartView.displayMessages(currentCart);
+        for (CartItem c: currentCart.getItemsWithMessage()){
+            System.out.println(c.getProduct()+": "+c.getMsg());
+        }
+        // System.out.println(currentCart.getItemsWithMessage());
         System.out.println("Enter the item you want to change message? If not, just press enter");
         String input = sc.nextLine();
         int value = 0;

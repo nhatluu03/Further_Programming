@@ -23,8 +23,7 @@ public class Main {
         currentCart = new Cart();
 
         // Initialize cartList 's controller, and add current cart to
-        CartList cartList = new CartList();
-        CartListController cartListController = new CartListController(cartList);
+        CartList cartList = CartList.getInstance();        CartListController cartListController = new CartListController(cartList);
         cartListController.addCart(currentCart);
         cartListController.sortCartList();
 

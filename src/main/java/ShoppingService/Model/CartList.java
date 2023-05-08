@@ -6,8 +6,16 @@ import java.util.*;
 
 public class CartList {
     private static List<Cart> cartList;
+    private static CartList instance = null;
 
-    public CartList() {
+    public static CartList getInstance() {
+        if (instance == null) {
+            instance = new CartList();
+        }
+        return instance;
+    }
+
+    private CartList() {
         cartList = new ArrayList<>();
     }
 
