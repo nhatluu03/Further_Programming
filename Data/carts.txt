@@ -1,0 +1,3 @@
+Cart,Name_Message|Name_Message,Coupon_Product
+Cart,Ip14_dasdasd|Ip14_Thisis|ASUS ROG Strix G15,15.6" Gaming Laptop|ASUS ROG Strix G15,15.6" Gaming Laptop|ASUS ROG Strix G15,15.6" Gaming Laptop,CP3535_Ip14
+Cart,Ip14_dasdasd|Ip14_Thisis|ASUS ROG Strix G15,15.6" Gaming Laptop

@@ -1,0 +1,45 @@
+Product,Name,Description,Type_Weight,AvailableQuantity,Price,isGiftable,TaxType,CouponList(Id_Type_Value|Id_Type_Value)
+Product,Ip13,This is ip 13,1_23,50,500,true,FreeTaxRate,CP1_1_57|CP0_2_53|CP443_1_1
+Product,Ip14,This is ip 13,2,50,500,true,NormalTaxRate,CP6_1_57|CP3535_2_53|CP123123_1_1
+Product,Lenovo Ideapad 3,15.6" Full HD Laptop,1_2.3,20,649.99,true,NormalTaxRate,CP1_1_15|CP2_2_499
+Product,ASUS ROG Strix G15,15.6" Gaming Laptop,2,10,1199.99,false,LuxuryTaxRate,CP3_1_35|CP4_2_799
+Product,Apple Watch Series 7,Smartwatch with Always-On Retina Display,2,5,399.99,true,FreeTaxRate,CP5_1_20|CP6_2_349
+Product,Fitbit Charge 5,Advanced Health and Fitness Tracker,2,15,149.99,true,NormalTaxRate,CP7_1_10|CP8_2_129
+Product,Wireless Bose QuietComfort,Noise Cancelling Headphones,2,8,299.99,true,FreeTaxRate,CP9_1_25|CP10_2_249
+Product,Samsung Galaxy Tab S7 FE,12.4" 5G Tablet,1_1.5,7,649.99,false,LuxuryTaxRate,CP11_1_10|CP12_2_599
+Product,Nikon D780 DSLR Camera,24.5 MP Full Frame Camera,1_3.5,3,2799.99,true,NormalTaxRate,CP13_1_50|CP14_2_2199
+Product,Apple MacBook Pro 16",16" Retina Display Laptop,1_4.3,12,2399.99,true,FreeTaxRate,CP15_1_30|CP16_2_2199
+Product,Sony PlayStation 5,Disc Edition Console,2,5,499.99,true,NormalTaxRate,CP17_1_15|CP18_2_449
+Product,Xbox Series X Console,The Fastest and most Powerful Xbox Ever,2,7,499.99,true,FreeTaxRate,N/A
+Product,Canon EOS R6 Full-Frame,20.1 MP Camera,1_1.5,2,2499.99,true,NormalTaxRate,CP21_1_40|CP22_2_2099
+Product,Samsung Series QLED 4K,75" QLED 4K TV,1_78.7,4,1799.99,false,LuxuryTaxRate,CP23_1_100|CP24_2_1399
+Product,Amazon Kindle Paperwhite,Waterproof e-reader,2,20,139.99,true,FreeTaxRate,CP25_1_10|CP26_2_119
+Product,Google Nest Learning,Smart Thermostat,2,10,249.99,true,FreeTaxRate,CP29_1_40
+Product,VacuumCleaner,Powerful vacuum cleaner for your home,1_5,100,200,true,FreeTaxRate,CP4yt_1_23|CP2356_2_45
+Product,Curtains,Stylish curtains for your home,2,50,100,true,NormalTaxRate,N/A
+Product,WallArt,Beautiful wall art to decorate your home,2,20,50,true,NormalTaxRate,CP2135v523_1_2|CP123v_2_20
+Product,CoffeeMaker,Stylish coffee maker for your kitchen,1_3,30,150,true,FreeTaxRate,CP2354_1_17|CP3_2_75
+Product,Toaster,Oven toaster for your kitchen needs,1_2,25,80,true,NormalTaxRate,N/A
+Product,WaterPurifier,Advanced water purifier for your home,1_10,15,300,true,LuxuryTaxRate,CP325e_1_47|CP235g_2_90
+Product,Television,Large-screen television for your entertainment,2,10,1000,true,NormalTaxRate,CP13e_1_10|CP1e4_2_500
+Product,Refrigerator,High capacity refrigerator for your kitchen,1_50,5,800,true,FreeTaxRate,CP1s5_1_31|CP1f6_2_400
+Product,ShowerHead,Luxurious shower head for your bathroom,2,40,50,true,FreeTaxRate,CP1r7_1_1|CP1w8_2_25
+Product,ToiletSeat,Advanced toilet seat for your bathroom,2,30,100,true,NormalTaxRate,CP1e9_1_7|CP20g_2_50
+Product,WindowBlinds,Stylish window blinds for your home,2,30,80,true,FreeTaxRate,CP2s1_1_3|CP22s_2_40
+Product,KitchenKnife,Sharp kitchen knife set for your kitchen,1_1,20,60,true,NormalTaxRate,CP2q3_1_5|CP2e4_2_30
+Product,Comforter,Soft and comfortable comforter for your bed,1_5,40,120,true,FreeTaxRate,CP2r5_1_21|CP2t6_2_60
+Product,TowelSet,Luxurious towel set for your bathroom,2,50,30,true,NormalTaxRate,CP2u7_1_3|CP2y8_2_15
+Product,SteamIron,Powerful steam iron for your clothing needs,1_1,30,70,true,FreeTaxRate,CP2y9_1_9|CP3i0_2_35
+Product,DeskLamp,Stylish desk lamp for your workspace,2,30,40,true,NormalTaxRate,CP3e1_1_2|CP3rr2_2_20
+Product,Chair,Comfortable chair for your home office,2,20,100,true,NormalTaxRate,CP343_1_5
+Product,Bedframe,Stylish bed frame for your bedroom,1_50,5,500,true,LuxuryTaxRate,CP325_1_28|CP346_2_250
+Product,Lamp,Table lamp with adjustable brightness,1_2.5,25,35,true,NormalTaxRate,N/A
+Product,TrashCan,Stainless steel trash can,1_5,15,70,true,NormalTaxRate,CTRASHCAN_1_10|CTRASHCAN_2_25|CTRASHCAN_2_50|CTRASHCAN_1_70
+Product,Shelf,5-tier shelf for storage,2,10,120,false,FreeTaxRate,CSHELF_1_10|CSHELF_2_20|CSHELF_2_30
+Product,Painting,Canvas painting of nature scenery,1_7,5,200,true,LuxuryTaxRate,CPAINT_1_30|CPAINT_1_100|CPAINT_2_200|CPAINT_2_50
+Product,Pillow,Set of 2 memory foam pillows,1_4,30,50,true,FreeTaxRate,CPLW_1_10|CPLW_2_15|CPLW_2_25
+Product,Blanket,Soft and cozy fleece blanket,1_3,20,40,true,NormalTaxRate,CBLNK_1_5|CBLNK_2_10|CBLNK_1_15
+Product,Steamer,Clothing steamer for quick ironing,1_3.5,15,60,true,NormalTaxRate,CSTM_1_10|CSTM_1_20|CSTM_2_30|CSTM_2_40
+Product,CoffeeTable,Rectangular wooden coffee table,1_20,7,300,true,LuxuryTaxRate,CCT_1_50|CCT_2_100|CCT_1_150|CCT_2_200
+Product,CurtainRod,Adjustable curtain rod with finials,1_2,20,25,true,FreeTaxRate,CCR_1_5|CCR_2_10|CCR_2_15
+Product,Scale,Digital bathroom scale,1_3,25,30,true,NormalTaxRate,CSCL_1_5|CSCL_2_10|CSCL_2_20|CSCL_1_30
