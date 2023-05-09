@@ -41,8 +41,9 @@ public class ShopManager {
 
         System.out.println("13 - View all carts");
         System.out.println("14 - View details of the current cart");
-        System.out.println("15 - Print purchase receipts for the current cart");
-        System.out.println("16 - Quit");
+        System.out.println("15 - Print purchase receipts for the current cart to the console");
+        System.out.println("16 - Remove coupon from current cart!");
+        System.out.println("17 - Quit");
     }
 
 
@@ -283,7 +284,8 @@ public class ShopManager {
                     Cart cart = new Cart();
                     CartController cartController = new CartController(cart);
                     String[] parts = line.split(",");
-                    if (parts.length >= 2) {
+                    if (parts.length >= 2
+                    ) {
                         String cartItems = parts[1];
                         if (!cartItems.equals("N/A")) {
                             String[] cartItem = cartItems.split("\\|");
@@ -362,6 +364,15 @@ public class ShopManager {
                 })
                 .collect(Collectors.toList());
 
+    }
+
+    public static void removeCoupon() {
+        if (currentCart.getCoupon() == null) {
+            System.out.println("This cart does not have coupon to remove!");
+        } else {
+            currentCart.setCoupon(null);
+            System.out.println("Coupon removed!");
+        }
     }
 }
 

@@ -150,7 +150,7 @@ public class Cart implements Comparable<Cart> {
 
     @Override
     public int compareTo(Cart other) {
-        return Double.compare(this.totalWeight, other.totalWeight);
+        return Double.compare(other.totalWeight, this.totalWeight);
     }
 }
 

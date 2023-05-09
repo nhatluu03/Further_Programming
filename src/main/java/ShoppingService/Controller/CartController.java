@@ -70,7 +70,7 @@ public class CartController {
         applyCoupon(sc);
 
         if (product instanceof PhysicalProduct) {
-            double newTotalWeight = cart.getTotalWeight() + ((PhysicalProduct) product).getWeight();
+            double newTotalWeight = cart.getTotalWeight() + ((PhysicalProduct) product).getWeight() * amount;
             cart.setTotalWeight(newTotalWeight);
         }
 

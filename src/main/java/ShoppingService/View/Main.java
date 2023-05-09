@@ -23,7 +23,8 @@ public class Main {
         currentCart = new Cart();
 
         // Initialize cartList 's controller, and add current cart to
-        CartList cartList = CartList.getInstance();        CartListController cartListController = new CartListController(cartList);
+        CartList cartList = CartList.getInstance();
+        CartListController cartListController = new CartListController(cartList);
         cartListController.addCart(currentCart);
         cartListController.sortCartList();
 
@@ -60,8 +61,13 @@ public class Main {
                 case 12 -> applyCouponToCart();
                 case 13 -> cartList.displayCarts();
                 case 14 -> displayCartDetails();
-                case 15 -> printReceipt(currentCart);
-                case 16 -> quit = true;
+                case 15 -> {
+                    printReceipt(currentCart);
+                    currentCart = new Cart();
+                    System.out.println("New cart created!");
+                }
+                case 16 -> removeCoupon();
+                case 17 -> quit = true;
                 default -> System.out.println("Invalid entry! Please try again.");
             }
         }

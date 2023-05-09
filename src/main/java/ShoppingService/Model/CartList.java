@@ -38,6 +38,7 @@ public class CartList {
             String status = cart.isFinal() ? "Paid" : "Not paid";
             System.out.printf("Status: %s\n\n", status);
         }
+        System.out.println("The carts are displayed in ascending order");
     }
 
     public Cart getCart(int idx) {
