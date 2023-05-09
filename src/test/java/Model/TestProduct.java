@@ -1,4 +1,4 @@
-package ShoppingService;
+package Model;
 
 /**
  * @author Nguyen Nhat Minh - s3932112
