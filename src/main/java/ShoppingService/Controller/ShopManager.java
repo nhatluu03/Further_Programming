@@ -177,7 +177,7 @@ public class ShopManager {
             System.out.println("Enter the index of the item you want to remove");
             input = sc.nextLine();
             int index = Validations.validateIndex(input, currentCart.getItems().getCartItemsList().size(), sc);
-            cartController.removeItem(currentCart.getItems().getItem(index));
+            cartController.removeItem(currentCart.getItems().getItem(index-1));
         } else {
             currentCart.showProductList();
             System.out.println("Enter the product name you want to remove");
@@ -232,27 +232,19 @@ public class ShopManager {
     public static void updateProductMessageInCart() {
         System.out.println("\nUPDATING MESSAGES OF ITEMS IN CART");
         System.out.println("This is all items with message in your cart:");
-        // CartView.displayMessages(currentCart);
-        for (CartItem c: currentCart.getItemsWithMessage()){
-            System.out.println(c.getProduct()+": "+c.getMsg());
-        }
-        // System.out.println(currentCart.getItemsWithMessage());
-        System.out.println("Enter the item you want to change message? If not, just press enter");
-        String input = sc.nextLine();
-        int value = 0;
-        if (!input.isEmpty()) {
-            try {
-                value = Integer.parseInt(input);
-                if (value < currentCart.getSize() - 1 || value < 1) {
-                    System.out.println("The input is not valid!");
-                }
-                System.out.println("Enter the new message!");
-                input = sc.nextLine();
 
-                currentCart.getItems().editMessage(currentCart.getItemsWithMessage().getItem(value), input);
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid input. Please enter a valid positive number:");
-            }
+        CartItemList updateCartList = currentCart.getItemsWithMessage();
+        updateCartList.displayCartItems();
+        System.out.println("Enter the index of the item you want to change message. If not, just press enter");
+        String input = sc.nextLine();
+        int value;
+        if (!input.isEmpty()) {
+            value = Validations.validateIndex(input, updateCartList.getCartItemsList().size(), sc);
+            System.out.println("Enter the new message:");
+            String newMsg = sc.nextLine();
+            currentCart.getItems().editMessage(updateCartList.getItem(value - 1), newMsg);
+            System.out.println("MESSAGE UPDATED!");
+
         }
     }
 
@@ -371,3 +363,6 @@ public class ShopManager {
 
     }
 }
+
+
+

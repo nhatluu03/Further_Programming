@@ -74,6 +74,10 @@ public class CartItemList implements Iterable<CartItem> {
         return cartItemsList.iterator();
     }
 
-
+    public void displayCartItems() {
+        for (int i = 0; i < cartItemsList.size(); i++) {
+            System.out.printf("\t - (%s) %s : %s\n", i + 1, getItem(i).getProduct(), getItem(i).getMsg());
+        }
+    }
 
 }

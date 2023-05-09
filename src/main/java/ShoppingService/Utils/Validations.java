@@ -50,7 +50,7 @@ public class Validations {
         while (!valid) {
             try {
                 number = Integer.parseInt(string);
-                if (number < 0) {
+                if (number <= 0) {
                     System.out.println("The number cannot be less than 0, please re-input the number:");
                 } else {
                     valid = true;
@@ -69,7 +69,7 @@ public class Validations {
         while (!valid) {
             try {
                 price = Integer.parseInt(priceInput);
-                if (price < 0) {
+                if (price <= 0) {
                     System.out.println("The product price cannot be less than 0, please re-input the price:");
                 } else {
                     valid = true;
@@ -83,7 +83,6 @@ public class Validations {
     }
 
     public static boolean validateBoolean(String giftInput, Scanner sc) {
-        boolean valid = false;
         while (true) {
             if (giftInput.equals("y")) {
                 return true;
@@ -103,7 +102,7 @@ public class Validations {
         while (!valid) {
             try {
                 value = Integer.parseInt(input);
-                if (value < 0) {
+                if (value <= 0) {
                     System.out.println("The coupon value cannot be less than 0, please re-input the value:");
                 } else if (value > 99) {
                     System.out.println("The coupon value cannot be larger than 99, please re-input the value:");
@@ -124,7 +123,7 @@ public class Validations {
         while (!valid) {
             try {
                 value = Integer.parseInt(input);
-                if (value < 0) {
+                if (value <= 0) {
                     System.out.println("The coupon value cannot be less than 0, please re-input the value:");
                 } else {
                     valid = true;
@@ -139,16 +138,21 @@ public class Validations {
 
     public static String validateTaxType(String input, Scanner sc) {
         while (true) {
-            if (input.equals("1")) {
-                return "FreeTaxRate";
-            } else if (input.equals("2")) {
-                return "NormalTaxRate";
-            } else if (input.equals("3")) {
-                return "LuxuryTaxRate";
-            } else {
-                System.out.println("Your input should only be 1, 2 or 3 ");
-                System.out.println("Please enter the product tax type: \n\t - Free Tax Rate (1) \n\t - Normal Tax Rate (2) \n\t - Luxury Tax Rate (3)");
-                input = sc.nextLine();
+            switch (input) {
+                case "1" -> {
+                    return "FreeTaxRate";
+                }
+                case "2" -> {
+                    return "NormalTaxRate";
+                }
+                case "3" -> {
+                    return "LuxuryTaxRate";
+                }
+                default -> {
+                    System.out.println("Your input should only be 1, 2 or 3 ");
+                    System.out.println("Please enter the product tax type: \n\t - Free Tax Rate (1) \n\t - Normal Tax Rate (2) \n\t - Luxury Tax Rate (3)");
+                    input = sc.nextLine();
+                }
             }
         }
     }
@@ -172,7 +176,7 @@ public class Validations {
         while (!valid) {
             try {
                 value = Integer.parseInt(input);
-                if (value < 0) {
+                if (value <= 0) {
                     System.out.println("The index value cannot be less than 0, please re-input the index:");
                 } else if (value > size) {
                     System.out.println("The index value is out of range, please re-input the index:");

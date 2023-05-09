@@ -115,7 +115,7 @@ public class Cart implements Comparable<Cart> {
 
     public void showItemList() {
         System.out.println();
-        System.out.println(items);
+        items.displayCartItems();
     }
 
     public int getSize() {
