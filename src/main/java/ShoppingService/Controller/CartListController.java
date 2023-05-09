@@ -54,9 +54,6 @@ public class CartListController {
                     int amount = entry.getValue();
                     if (productWeight instanceof PhysicalProduct) {
                         totalWeight += ((PhysicalProduct) productWeight).getWeight() * amount;
-                        System.out.println(((PhysicalProduct) productWeight).getWeight());
-                        System.out.println(amount);
-                        System.out.println(totalWeight);
                     }
                 }
                 cart.setTotalWeight(totalWeight);

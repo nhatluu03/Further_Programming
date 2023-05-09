@@ -26,9 +26,9 @@ public class CartView {
 
         if (cart.getCoupon() != null) {
             if (cart.getCoupon().getCoupon() instanceof PriceCoupon) {
-                System.out.printf("Coupon: %d % on product %s\n", cart.getCoupon().getCoupon().getDiscountAmount(), cart.getCoupon().getProduct().getName());
+                System.out.printf("Coupon: %.2f $ on product %s\n", cart.getCoupon().getCoupon().getDiscountAmount(), cart.getCoupon().getProduct().getName());
             } else if (cart.getCoupon().getCoupon() instanceof PercentCoupon) {
-                System.out.printf("Coupon: %.2f$ on product %s\n", cart.getCoupon().getCoupon().getDiscountAmount(), cart.getCoupon().getProduct().getName());
+                System.out.printf("Coupon: %.2f %% -  %.2f $ on product %s\n", cart.getCoupon().getCoupon().getDiscountAmount(), cart.getCoupon().reducedPrice(), cart.getCoupon().getProduct().getName());
             }
         } else {
             System.out.println("Coupon: Not found");

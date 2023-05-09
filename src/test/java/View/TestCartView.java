@@ -39,9 +39,9 @@ class TestCartView {
         CartView.displayCart(cart);
 
         // Normalize line separators
-        String expectedOutput = "Products: 1xSony PlayStation 08, 2xSony PlayStation 07\n" +
+        String expectedOutput = "Products: 2xSony PlayStation 07, 1xSony PlayStation 08\n" +
                 "Weight: 0.00\n" +
-                "Coupon: -20.00$ on product Sony PlayStation 07\n" +
+                "Coupon: 20.00 $ on product Sony PlayStation 07\n" +
                 "Tax: 0.00\n" +
                 "Total: 20.29\n";
         expectedOutput = expectedOutput.replaceAll("\\r\\n", "\n"); // Normalize to '\n'

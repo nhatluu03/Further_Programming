@@ -20,12 +20,12 @@ Product,Curtains,Stylish curtains for your home,2,50,100,true,NormalTaxRate,N/A
 Product,WallArt,Beautiful wall art to decorate your home,2,20,50,true,NormalTaxRate,CP2135v523_1_2|CP123v_2_20
 Product,CoffeeMaker,Stylish coffee maker for your kitchen,1_3,30,150,true,FreeTaxRate,CP2354_1_17|CP3_2_75
 Product,Toaster,Oven toaster for your kitchen needs,1_2,25,80,true,NormalTaxRate,N/A
-Product,WaterPurifier,Advanced water purifier for your home,1_10,15,300,true,LuxuryTaxRate,CP325e_1_47|CP235g_2_90
+Product,WaterPurifier,Advanced water purifier for your home,1_10,15,300,false,LuxuryTaxRate,CP325e_1_47|CP235g_2_90
 Product,Television,Large-screen television for your entertainment,2,10,1000,true,NormalTaxRate,CP13e_1_10|CP1e4_2_500
 Product,Refrigerator,High capacity refrigerator for your kitchen,1_50,5,800,true,FreeTaxRate,CP1s5_1_31|CP1f6_2_400
-Product,ShowerHead,Luxurious shower head for your bathroom,2,40,50,true,FreeTaxRate,CP1r7_1_1|CP1w8_2_25
+Product,ShowerHead,Luxurious shower head for your bathroom,2,40,50,false,FreeTaxRate,CP1r7_1_1|CP1w8_2_25
 Product,ToiletSeat,Advanced toilet seat for your bathroom,2,30,100,true,NormalTaxRate,CP1e9_1_7|CP20g_2_50
-Product,WindowBlinds,Stylish window blinds for your home,2,30,80,true,FreeTaxRate,CP2s1_1_3|CP22s_2_40
+Product,WindowBlinds,Stylish window blinds for your home,2,30,80,false,FreeTaxRate,CP2s1_1_3|CP22s_2_40
 Product,KitchenKnife,Sharp kitchen knife set for your kitchen,1_1,20,60,true,NormalTaxRate,CP2q3_1_5|CP2e4_2_30
 Product,Comforter,Soft and comfortable comforter for your bed,1_5,40,120,true,FreeTaxRate,CP2r5_1_21|CP2t6_2_60
 Product,TowelSet,Luxurious towel set for your bathroom,2,50,30,true,NormalTaxRate,CP2u7_1_3|CP2y8_2_15
@@ -33,7 +33,7 @@ Product,SteamIron,Powerful steam iron for your clothing needs,1_1,30,70,true,Fre
 Product,DeskLamp,Stylish desk lamp for your workspace,2,30,40,true,NormalTaxRate,CP3e1_1_2|CP3rr2_2_20
 Product,Chair,Comfortable chair for your home office,2,20,100,true,NormalTaxRate,CP343_1_5
 Product,Bedframe,Stylish bed frame for your bedroom,1_50,5,500,true,LuxuryTaxRate,CP325_1_28|CP346_2_250
-Product,Lamp,Table lamp with adjustable brightness,1_2.5,25,35,true,NormalTaxRate,N/A
+Product,Lamp,Table lamp with adjustable brightness,1_2.5,25,35,false,NormalTaxRate,N/A
 Product,TrashCan,Stainless steel trash can,1_5,15,70,true,NormalTaxRate,CTRASHCAN_1_10|CTRASHCAN_2_25|CTRASHCAN_2_50|CTRASHCAN_1_70
 Product,Shelf,5-tier shelf for storage,2,10,120,false,FreeTaxRate,CSHELF_1_10|CSHELF_2_20|CSHELF_2_30
 Product,Painting,Canvas painting of nature scenery,1_7,5,200,true,LuxuryTaxRate,CPAINT_1_30|CPAINT_1_100|CPAINT_2_200|CPAINT_2_50

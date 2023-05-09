@@ -96,10 +96,13 @@ public class CartController {
         if (productList.get(item.getProduct()) == 0) {
             productList.remove(item.getProduct());
             System.out.println("Product removed from list!");
-            if (cart.getCoupon().getProduct().equals(item.getProduct())) {
-                cart.setCoupon(null);
-                System.out.println("Coupon removed since no product with the corresponding coupon existed!");
+            if (cart.getCoupon() != null) {
+                if (cart.getCoupon().getProduct().equals(item.getProduct())) {
+                    cart.setCoupon(null);
+                    System.out.println("Coupon removed since no product with the corresponding coupon existed!");
+                }
             }
+
         }
         if (item.getProduct() instanceof  PhysicalProduct) {
             double newTotalWeight = cart.getTotalWeight() - ((PhysicalProduct) item.getProduct()).getWeight();

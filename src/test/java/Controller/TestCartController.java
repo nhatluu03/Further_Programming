@@ -37,7 +37,7 @@ public class TestCartController {
 
     @Test
     public void testAddItemWithAmount() {
-        Product product = new PhysicalProduct("Sony PlayStation 06", "This is a Disc Edition", 10, 19.99, 1.0, true, "NormalTaxRate");
+        Product product = new PhysicalProduct("Sony PlayStatio 06", "This is a Disc Edition", 10, 19.99, 1.0, true, "NormalTaxRate");
         provideUserInput("2"); // Simulate user input for adjusting the amount
         assertTrue(cartController.addItem(product));
         assertEquals(1, cart.getItems().getCartItemsList().size());
@@ -48,7 +48,7 @@ public class TestCartController {
     @Test
     public void testRemoveItem() {
         // Create a product and add it to the cart
-        Product product = new PhysicalProduct("Sony PlayStation 06", "This is a Disc Edition", 10, 19.99, 1.0, false, "NormalTaxRate");
+        Product product = new PhysicalProduct("Sony PlayStati 06", "This is a Disc Edition", 10, 19.99, 1.0, false, "NormalTaxRate");
         cartController.addItem(product);
         CartItem cartItem = new CartItemNotGiftable(product, cart);
 
@@ -63,7 +63,7 @@ public class TestCartController {
 
     @Test
     public void testChangeAmount() {
-        Product product = new PhysicalProduct("Sony PlayStation 06", "This is a Disc Edition", 10, 19.99, 1.0, true, "NormalTaxRate");
+        Product product = new PhysicalProduct("Sony PlayStat 06", "This is a Disc Edition", 10, 19.99, 1.0, true, "NormalTaxRate");
         cart.getProductList().put(product, 1);
 
         // Simulate user input for new amount
