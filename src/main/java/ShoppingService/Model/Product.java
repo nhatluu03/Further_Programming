@@ -151,29 +151,6 @@ public abstract class Product {
         Product.products = products;
     }
 
-    public void addCoupon(Scanner sc) {
-        String input;
-        System.out.println("Please input the coupon id!");
-        input = sc.nextLine();
-        String id = Validations.validateId(input, sc);
-
-        System.out.println("Please choose the coupon type: Percent Coupon (1) or Price Coupon (2)");
-        input = sc.nextLine();
-        Coupon coupon = null;
-        if (input.equals("1")) {
-            System.out.println("Please input the value of the coupon: (1-99)");
-            input = sc.nextLine();
-            double value = Validations.validatePercentCouponValue(input, sc);
-            coupon = new PercentCoupon(id, value);
-        } else if (input.equals("2")) {
-            System.out.println("Please input the value of the coupon: > 0 ");
-            input = sc.nextLine();
-            double value = Validations.validatePriceCouponValue(input, sc);
-            coupon = new PriceCoupon(id, value);
-        }
-        coupons.add(coupon);
-    }
-
     public void addCoupon(Coupon coupon) {
         coupons.add(coupon);
     }

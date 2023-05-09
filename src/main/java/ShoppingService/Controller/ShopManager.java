@@ -98,7 +98,8 @@ public class ShopManager {
         System.out.println("Product created! Do you want to create coupon for the product? y/n");
         input = sc.nextLine();
         if (Validations.validateBoolean(input, sc)) {
-            Product.getProduct(name).addCoupon(sc);
+            ProductController productController = new ProductController(product);
+            productController.addCoupon(sc);
         }
 
         pauseToRead();

@@ -20,19 +20,20 @@ public class ProductController {
 
         System.out.println("Please choose the coupon type: Percent Coupon (1) or Price Coupon (2)");
         input = sc.nextLine();
-        Coupon coupon = null;
         if (input.equals("1")) {
             System.out.println("Please input the value of the coupon: (1-99)");
             input = sc.nextLine();
             double value = Validations.validatePercentCouponValue(input, sc);
-            coupon = new PercentCoupon(id, value);
+            product.getCoupons().add(new PercentCoupon(id, value));
+
         } else if (input.equals("2")) {
             System.out.println("Please input the value of the coupon: > 0 ");
             input = sc.nextLine();
             double value = Validations.validatePriceCouponValue(input, sc);
-            coupon = new PriceCoupon(id, value);
+            product.getCoupons().add(new PriceCoupon(id, value));
+        } else {
+            System.out.println("Invalid Type!");
         }
-        product.getCoupons().add(coupon);
     }
 
     public void updateProduct() {
