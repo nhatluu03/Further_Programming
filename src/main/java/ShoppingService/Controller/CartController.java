@@ -20,6 +20,10 @@ public class CartController {
         } else {
             productList.put(product, 1);
         }
+        if (product instanceof PhysicalProduct) {
+            double newTotalWeight = cart.getTotalWeight() + ((PhysicalProduct) product).getWeight();
+            cart.setTotalWeight(newTotalWeight);
+        }
         return true;
     }
 
@@ -30,6 +34,11 @@ public class CartController {
             productList.put(product, productList.get(product) + 1);
         } else {
             productList.put(product, 1);
+
+        }
+        if (product instanceof PhysicalProduct) {
+            double newTotalWeight = cart.getTotalWeight() + ((PhysicalProduct) product).getWeight();
+            cart.setTotalWeight(newTotalWeight);
         }
         return true;
     }

@@ -17,7 +17,7 @@ public class TestCartListController {
 
     @BeforeEach
     void setUp() {
-        cartList = new CartList();
+        cartList = CartList.getInstance();
         cartListController = new CartListController(cartList);
     }
 
@@ -79,40 +79,45 @@ public class TestCartListController {
         assertEquals(cart3, sortedList.get(2));
     }
 
-//    @Test
-//    void testUpdateCartList() {
-//        // Create a sample cart
-//        Cart cart = new Cart();
-//
-//        // Add the cart to the cart list
-//        cartListController.addCart(cart);
-//
-//        // Update the cart
-//        cart.setTotalWeight(10.0);
-//        cartListController.updateCartList(cart);
-//
-//        // Verify the cart has been updated in the cart list
-//        List<Cart> cartList = CartList.getCartList();
-//        assertEquals(10.0, cartList.get(0).getTotalWeight());
-//    }
+    @Test
+    void testUpdateCartList() {
+        // Create a sample cart
+        Cart cart = new Cart();
 
-//    @Test
-//    void testUpdateWeightForCart() {
-//        // Create a sample cart
-//        Cart cart = new Cart();
-//        cartListController.addCart(cart);
-//
-//        // Create a physical product with weight
-//        Product product = new PhysicalProduct("Sony PlayStation 15", "This is a Disc Edition", 10, 19.99, 1.0, true, "NormalTaxRate");
-//
-//        // Add the product to the cart
-//        CartController cartController = new CartController(cart);
-//        cartController.addItem(product);
-//
-//        // Update the weight for the cart
-//        cartListController.updateWeightForCart(product);
-//
-//        // Verify the cart's total weight has been updated
-//        assertEquals(1.0, cart.getTotalWeight());
-//    }
+        // Add the cart to the cart list
+        cartListController.addCart(cart);
+
+        // Update the cart
+        cart.setTotalWeight(10.0);
+        cartListController.updateCartList(cart);
+
+        // Verify the cart has been updated in the cart list
+        List<Cart> cartList = CartList.getCartList();
+        assertEquals(10.0, cartList.get(0).getTotalWeight());
+    }
+
+    @Test
+    void testUpdateWeightForCart() {
+        // Create a sample cart
+        Cart cart = new Cart();
+        cartListController.addCart(cart);
+
+        // Create a physical product with weight
+        Product product = new PhysicalProduct("Sony PlayStation 15", "This is a Disc Edition", 10, 19.99, 1.0, true, "NormalTaxRate");
+
+        // Add the product to the cart
+        CartController cartController = new CartController(cart);
+        cartController.addItem(product);
+
+        assertEquals(1.0, cart.getTotalWeight());
+
+        // Update the product weight
+        ((PhysicalProduct) product).setWeight(2.0);
+
+        // Update the weight for the cart
+        cartListController.updateWeightForCart(product);
+
+        // Verify the cart's total weight has been updated
+        assertEquals(2.0, cart.getTotalWeight());
+    }
 }

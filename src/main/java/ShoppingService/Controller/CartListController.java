@@ -46,13 +46,17 @@ public class CartListController {
     public void updateWeightForCart(Product product) {
         List<Cart> cartsToUpdate = new ArrayList<>();
         for (Cart cart : cartList) {
-            if (cart.getProductList().containsKey(product.getName())) {
+
+            if (cart.getProductList().containsKey(product)) {
                 double totalWeight = 0;
                 for (Map.Entry<Product, Integer> entry : cart.getProductList().entrySet()) {
                     Product productWeight = entry.getKey();
                     int amount = entry.getValue();
                     if (productWeight instanceof PhysicalProduct) {
                         totalWeight += ((PhysicalProduct) productWeight).getWeight() * amount;
+                        System.out.println(((PhysicalProduct) productWeight).getWeight());
+                        System.out.println(amount);
+                        System.out.println(totalWeight);
                     }
                 }
                 cart.setTotalWeight(totalWeight);
