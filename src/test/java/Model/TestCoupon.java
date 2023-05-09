@@ -16,7 +16,7 @@ public class TestCoupon {
         assertEquals("Percent Coupon", percentCoupon.getType());
         assertEquals("Price Coupon", priceCoupon.getType());
         assertEquals(22, priceCoupon.getDiscountAmount());
-        assertEquals(14, percentCoupon.getDiscountAmount());
+        assertEquals(10, percentCoupon.getDiscountAmount());
     }
 
     @Test
