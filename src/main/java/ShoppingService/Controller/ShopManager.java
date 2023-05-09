@@ -284,29 +284,27 @@ public class ShopManager {
                     Cart cart = new Cart();
                     CartController cartController = new CartController(cart);
                     String[] parts = line.split(",");
-                    if (parts.length >= 2
-                    ) {
-                        String cartItems = parts[1];
-                        if (!cartItems.equals("N/A")) {
-                            String[] cartItem = cartItems.split("\\|");
-                            for (String cartItemString : cartItem) {
-                                if (!cartItemString.contains("_")) {
-                                    cartController.addItem(Product.getProduct(cartItemString));
-                                } else {
-                                    String[] token = cartItemString.split("_");
-                                    cartController.addItem(Product.getProduct(token[0]), token[1]);
-                                }
+
+                    String cartItems = parts[1];
+                    if (!cartItems.equals("N/A")) {
+                        String[] cartItem = cartItems.split("\\|");
+                        for (String cartItemString : cartItem) {
+                            if (!cartItemString.contains("_")) {
+                                cartController.addItem(Product.getProduct(cartItemString));
+                            } else {
+                                String[] token = cartItemString.split("_");
+                                cartController.addItem(Product.getProduct(token[0]), token[1]);
                             }
                         }
                     }
 
-                    if (parts.length >= 3) {
+                    if (parts.length > 1) {
                         String coupon = parts[2];
                         if (!coupon.equals("N/A")) {
                             String[] couponItem = coupon.split("_");
-                            if (couponItem.length >= 2) {
-                                cart.setCoupon(new CouponProduct(Coupon.getCoupon(couponItem[0]), Product.getProduct(couponItem[1])));
-                            }
+                            cart.setCoupon(new CouponProduct(Coupon.getCoupon(couponItem[0]), Product.getProduct(couponItem[1])));
+                        } else {
+                            cart.setCoupon(null);
                         }
                     }
                     CartListController cartListController = new CartListController(cartList);
